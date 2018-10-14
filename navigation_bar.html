@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动原理应用之制作导航</title>
+	<style type="text/css">
+		body,ul,li{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.nav{
+			width: 800px;
+			height: 40px;
+			background: pink;
+			margin: 20px auto;
+		}
+		.nav ul li{
+			float: left;
+		}
+		.nav ul li a{
+			display: inline-block;
+			/*在a标签级别设置高度*/
+			font: 14px/40px 微软雅黑;
+			padding:0 20px;
+			text-decoration: none;
+		}
+		.nav ul li a:hover{
+			background: #aaa;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li>
+				<a href="#">bar1</a>
+			</li>
+			<li>
+				<a href="#">bar2</a>
+			</li>
+			<li>
+				<a href="#">bar3</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

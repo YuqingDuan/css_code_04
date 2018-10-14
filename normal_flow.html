@@ -1,0 +1,52 @@
+<!-- 文档流(标准流)元素自上而下，自左而右，块元素独占一行，行内元素在一行上显示，碰到父集元素的边框换行。 -->
+<!-- 特点：
+★元素浮动之后不占据原来的位置（脱标）
+★浮动的盒子在一行上显示
+★行内元素浮动之后转换为行内块元素。（不推荐使用，转行内元素最好使用display: inline-block;） -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style type="text/css">
+		/*清除元素距离浏览器的边距*/
+		body{
+			margin: 0;
+		}
+		/*设置盒子长和宽*/
+		.red,.green,.blue{
+			width: 200px;
+			height: 200px;
+		}
+		.red{
+			background: red;
+			/*红盒子左浮动*/
+			float:left;
+		}
+		.green{
+			background: green;
+			/*绿盒子左浮动*/
+			float:left;
+		}
+		.blue{
+			background: blue;
+			/*蓝盒子右浮动*/
+			float:right;
+
+		}
+		span{
+			/*span标签左浮动*/
+			float: left;
+			background: pink;
+			width:100px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+	<span></span>
+</body>
+</html>
