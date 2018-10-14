@@ -1,0 +1,52 @@
+<!-- 子绝父相（父元素用相对定位，子元素用绝对定位） -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米定位案例</title>
+	<style type="text/css">
+		.box{
+			width: 1226px;
+			height: 460px;
+			/*父元素用相对定位*/
+			position: relative;
+		}
+		.pic{
+			/*子元素用绝对定位*/
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.left{
+			/*子元素用绝对定位*/
+			position: absolute;
+			left:242px;
+			top:210px;
+		}
+		.right{
+			/*子元素用绝对定位*/
+			position: absolute;
+			right:0;
+			top:210px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 大背景图 -->
+	<div class="box">
+		<img src="example2/1.jpg" alt="">
+		<!-- 目录栏 -->
+		<div class="pic">
+			<img src="example2/xiaom_left.png" alt="">
+		</div>
+		<!-- 左箭头图标 -->
+		<div class="left">
+			<img src="example2/left.png" alt="">
+		</div>
+		<!-- 右箭头图标 -->
+		<div class="right">
+			<img src="example2/right.png" alt="">
+		</div>
+	</div>
+</body>
+</html>
